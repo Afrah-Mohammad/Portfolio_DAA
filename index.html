@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.css" integrity="sha512-6C+r1OJlC3qBPXIO1VNXP4c9KUSnF4BTBZXiPL8/oB5VqIYl76jlaH57ZJPBoaPENhcrvOZpEQKDVxSVzi3/1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        body {
+            color: white;
+            background-color: #333; /* Dark background for contrast */
+        }
+        #slide1 h2 {
+            font-size: 3em; /* You can adjust this value as needed */
+        }
+        #section2 h2 {
+            font-size: 2.5em;
+        }
+        #section2 ul {
+            list-style-type: none;
+        }
+        #section2 ul li {
+            margin-bottom: 1em;
+        }
+        table {
+            color: white;
+            border-color: white;
+        }
+        table th, table td {
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="subpage-menu">
+                <a href="#firstPage/1">My Introduction</a>
+                <a href="#firstPage/2">Course Introduction</a>
+            </div>
+            <div class="slide" id="slide1">
+                <h2>Design and Analysis of Algorithm</h2>
+            </div>
+            <div class="slide" id="slide2">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I am Afrah Mohammad – a student of KLE technological university.
+                </p>
+                <p>
+                    I am passionate about coding and have learnt languages like C, C++, python, SQL, and learning many more.
+                </p>
+                <p>
+                    I love to pass my leisure time in travelling, writing essays or just play with animals.
+                    I often imagine the impossible and get determined to reach my goal.
+                </p>
+            </div>
+            
+            <div class="slide" id="slide3">
+                <h2>Course Project Introduction</h2>
+                <h3>Problem Title: Strategic Approach to Agricultural Management</h3>
+                <p>
+                    <strong>Details:</strong><br>
+                    The project focuses on identifying and solving key issues in agricultural management. The problem space was explored through extensive research, including insights from white papers and city design considerations. Business cases were identified to address specific challenges and ensure practical solutions.
+                </p>
+                <p>
+                    <strong>Team Details:</strong><br>
+                    The team consists of passionate individuals dedicated to addressing agricultural challenges through innovative approaches.
+                </p>
+                <h3>Business Cases:</h3>
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>SI.No</th>
+                            <th>Business Case Identified</th>
+                            <th>Description</th>
+                            <th>Owner</th>
+                            <th>Probable Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mixing fields of different crops</td>
+                            <td>Same type of crops are being grown on different lands far away which creates problems during harvest.</td>
+                            <td>Sushmita</td>
+                            <td>Graph (BFS/DFS), Dijkstra's Algorithm</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Excessive wastage of water during irrigation</td>
+                            <td>Unequal amount of water going to all the fields due to which some crops get more water and some less, hampering production.</td>
+                            <td>Afrah</td>
+                            <td>Segment Trees, Fenwick Trees</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>No proper disposal of weeds</td>
+                            <td>Due to no proper disposal of weeds, they tend to grow again causing damage and more work for removal.</td>
+                            <td>Srishti</td>
+                            <td>Hashing, Traveling Salesman Problem (TSP) or Prim's Algorithm</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Unorganized distribution of harvested products</td>
+                            <td>When the crops are produced and further sent to the city for sale, some parts of the city receive more crops, and others less, failing to meet demand.</td>
+                            <td>Afrah, Srishti</td>
+                            <td>Heap, Dijkstra's Algorithm</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Excessive use of pesticides and insecticides</td>
+                            <td>Unwanted amounts of pesticides and insecticides are being used on crops, altering food quality and increasing health risks.</td>
+                            <td>Bhavana</td>
+                            <td>Sparse Tables</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Transportation in agricultural area</td>
+                            <td>No proper system for transportation in fields and inadequate interconnection between fields.</td>
+                            <td>Sushmita, Bhavana</td>
+                            <td>Kruskal's, Prim's Algorithm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <h2>Course Learning Reflections</h2>
+            <div class="slide">
+                <h3>What are the kinds of problems we see in nature?</h3>
+                <p>Problems in nature can be categorized into different types such as:</p>
+                <ul>
+                    <li><strong>Iteration:</strong> Repeating a process multiple times, for example, iterating over an array of crops for irrigation planning.</li>
+                    <li><strong>Recursion:</strong> A problem that calls itself repeatedly, such as breaking down the larger issue of crop management into smaller recursive tasks (e.g., dividing fields into sub-sections).</li>
+                    <li><strong>Backtracking:</strong> This approach is useful for exploring different possibilities, like trying different irrigation methods and backing out if a particular approach fails to optimize water usage.</li>
+                </ul>
+            </div>
+            <div class="slide">
+                <h3>What is space and time efficiency? Why are they important?</h3>
+                <p>Space and time efficiency are crucial in designing algorithms that handle large amounts of data efficiently. Time efficiency refers to the speed at which an algorithm executes, while space efficiency refers to the amount of memory it consumes. For example, when optimizing irrigation systems, we want the algorithm to run quickly and consume as little memory as possible.</p>
+            </div>
+            <div class="slide">
+                <h3>Take away from design principles (Chapter 2)</h3>
+                <p>Chapter 2 emphasizes the importance of efficient problem-solving strategies. Principles like divide and conquer, dynamic programming, and greedy algorithms are essential. For example, using Dijkstra’s Algorithm for distributing crops optimally or applying dynamic programming for water usage planning.</p>
+            </div>
+            <div class="slide">
+                <h3>How hierarchical data and tree data structures optimize problems?</h3>
+                <p>Hierarchical data structures like trees (e.g., Binary Search Tree, AVL) are critical for organizing and managing data in agricultural systems. For instance, a farm’s crop yield data could be stored in a tree structure to optimize search times and ensure faster data retrieval for planning.</p>
+            </div>
+            <div class="slide">
+                <h3>The need for array query algorithms</h3>
+                <p>Array query algorithms, such as segment trees or Fenwick trees, are necessary for efficiently answering range queries, such as calculating total water consumption across a set of fields or determining crop yield within a given range of dates.</p>
+            </div>
+            <div class="slide">
+                <h3>Difference between trees and graphs</h3>
+                <p>Trees are hierarchical structures, ideal for applications like hierarchical crop data storage, while graphs are more flexible and are suitable for representing the transportation network in agricultural areas.</p>
+            </div>
+            <div class="slide">
+                <h3>Sorting and Searching Algorithms</h3>
+                <p>Sorting algorithms like Merge Sort or Quick Sort are vital for organizing crop data for better management. Searching algorithms, such as binary search, help in quickly finding relevant information, like identifying crops that need more water.</p>
+            </div>
+            <div class="slide">
+                <h3>Importance of Graph Algorithms</h3>
+                <p>Graph algorithms like Dijkstra’s and Prim’s algorithm are essential for optimizing transportation paths, ensuring crops are efficiently distributed, and minimizing transportation costs across fields.</p>
+            </div>
+            <div class="slide">
+                <h3>Different Algorithm Design Techniques</h3>
+                <p>Techniques such as divide and conquer, dynamic programming, and greedy algorithms offer distinct benefits for problem-solving. For example, divide and conquer can break down complex issues like crop management into smaller, manageable parts for more efficient solutions.</p>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="slide">
+                <h2>Project Details</h2>
+            </div>
+            <div class="slide">
+                <h3>Course details</h3>
+                <p>Subject: Design and Analysis of Algorithm</p>
+                <p>Course co-ordinator: Mr.Prakash Hegde</p>
+                <p>Topics:</p>
+                <p>Chapter 1: Foundations</p>
+                <p>Chapter 2: Computing Principles and Tools</p>
+                <p>Chapter 3: Structured Data Management</p>
+            </div>
+            <div class="slide">
+                <h3>Photo of Team Members</h3>
+                <div class="team-photos">
+                    <div class="team-member">
+                        <img src='../images/afrah.jpg' alt="Team Member 1">
+                        <p>Name: Afrah Mohammad</p>
+                        <p>Roll no.: 447</p>
+                        <p>USN: 01FE23BCS200</p>
+                        <p>Business Case : Excessive Wastage of Water During Irrigation
+                            Description: Unequal amount of water is going to all the fields, causing some crops to receive more water and others less, which hampers production.
+                            Probable Tools: Segment Trees or Fenwick Trees
+                           <p> 
+                            Business Case : Unorganized Distribution of Harvested Products
+                            Description: After crops are produced and sent to the city for sale, some areas of the city receive more crops while others receive less, leading to an imbalance in meeting demand in different regions.
+                            Probable Tools: Heap, Dijkstra's Algorithm</p>
+                    </div>
+                    <div class="team-member">
+                        <img src='../images/bhavana.jpg' alt="Team Member 2">
+                        <p>Bhavana Sherekar</p>
+                        <p>Roll no.: 434</p>
+                        <p>USN: 01FE23BCS214</p>
+                        <p>Business Case : Excessive Use of Pesticides and Insecticides
+                            Description: Unwanted amount of pesticides and insecticides are being used on crops, which alter the quality of food and increase the risk of diseases.
+                            Probable Tools: Sparse Tables
+                           <p> 
+                            Business Case : Transportation in Agricultural Area
+                            Description: No proper system for transportation in the field, and the interconnection of fields is unjustified.
+                            Probable Tools: Kruskal's or Prim's Algorithm</p>
+                    </div>
+                    <div class="team-member">
+                        <img src='../images/sushmita.jpg' alt="Team Member 3">
+                        <p>Sushmita Shanbhag</p>
+                        <p>Roll no.: 411</p>
+                        <p>USN: 01FE23BCS199</p>
+                        <p>Business Case: No proper disposal of weeds
+                            Description: Due to no proper disposal of weeds, they tend to grow again causing damage and more work for removal.
+                            Probable Tools: Hashing, Traveling Salesman Problem (TSP) or Prim's Algorithm
+                           <p> 
+                            Business Case: Unorganized distribution of harvested products
+                            Description: When the crops are produced and further sent to the city for sale, some parts of the city receive more amount of crops and some less, in which demand of that area is not satisfied.
+                            Probable Tools: Heap, Dijkstra's Algorithm
+                            
+                            </p>
+                    </div>
+                    <div class="team-member">
+                        <img src='../images/srish.jpg' alt="Team Member 4">
+                        <p>Srishti Manvi</p>
+                        <p>Roll no.: 403</p>
+                        <p>USN: 01FE23BCS045</p>
+                        <p>Business Case: Mixing fields of different crops
+                            Description: Same type of crops are being grown on different lands far away which creates problem during harvest.
+                            Probable Tools: Graph (BFS/DFS), Dijkstra's Algorithm
+                           <p> 
+                            Business Case: Transportation in agricultural area
+                            Description: No proper system for transportation in field and as to which fields should be interconnected to which, is unjustified.
+                            Probable Tools: Kruskal's or Prim's Algorithm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h3>The City Plan</h3>
+                <p>City name: ~DREAMSCAPES~</p>
+                <img src='../images/seven.jpg' alt="City Plan">
+            </div>
+            <div class="slide">
+                <h3>Problem Statement</h3>
+                <p>Our project focuses on the strategic approach to agricultural management, addressing key issues like field management, water wastage, pesticide usage, and more. We aim to optimize various aspects of agricultural practices for better efficiency and sustainability.</p>
+            </div>
+            <div class="slide">
+                <h3>Work Distribution</h3>
+                <p>Each team member is responsible for specific business cases:
+                    <ul>
+                        <li>Case 1: Mixing fields of different crops - Sushmita</li>
+                        <li>Case 2: Excessive water wastage during irrigation - Afrah</li>
+                        <li>Case 3: No proper disposal of weeds - Srishti</li>
+                        <li>Case 4: Unorganized distribution of harvested products - Afrah</li>
+                        <li>Case 5: Excessive use of pesticides - Bhavana</li>
+                        <li>Case 6: Transportation in agricultural area - Sushmita and Bhavana</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="slide">
+                <h3>Project Description (All Six Cases)</h3>
+                <p>Our project addresses six critical challenges in agricultural management. Each business case is focused on improving specific aspects like water usage, transportation, waste management, and more. We apply algorithmic solutions like Dijkstra's and Prim's algorithms, dynamic programming, and others to optimize each scenario.</p>
+            </div>
+            <div class="slide">
+                <h3>Algorithm Implementation Details</h3>
+                <p>The algorithms used in our project range from graph-based algorithms like Dijkstra’s and Prim’s for optimizing transportation and distribution, to dynamic programming and segment trees for efficient data querying and management.</p>
+                <p>1. Business Case 1:Mixing fields of different crops	
+                    <p>Description: Same type of crops are being grown on different lands far away which creates problems during harvest.
+                        <p>Probable Tools: Graph (BFS/DFS), Dijkstra's Algorithm</p>
+                    </p>
+                <p>DFS:</p>
+                <img src='../images/dfs.jpg'>
+                <p>BFS:</p>
+                <img src='../images/bfs.jpg'>
+                <p>Dijkstra's Algorithm:</p>
+                <img src='../images/dijkstra.jpg'>
+
+                <p>
+
+                <p>2. Business Case 2:Excessive wastage of water during irrigation	
+                    <p>Description: Unequal amount of water going to all the fields due to which some crops get more water and some less, hampering production.
+                        <p>Probable Tools: Segment Trees, Fenwick Trees</p>
+                    </p>
+                <p>Fenwick Tree:</p>
+                <img src='../images/ss2.jpg'>
+                <p>Heap Sort:</p>
+                <img src='../images/heap.jpg'>
+                <p>Dijkstra's Algorithm:</p>
+                <img src='../images/dijkstra.jpg'></p>
+
+                <p>
+                    
+                <p>3. Business Case 3:No proper disposal of weeds	
+                    <p>Description: Due to no proper disposal of weeds, they tend to grow again causing damage and more work for removal.
+                        <p>Probable Tools: Hashing, Traveling Salesman Problem (TSP) or Prim's Algorithm</p>
+                    </p>
+                <p>Hashing:</p>
+                <img src='../images/hash.jpg'>
+                <p>Prim's Algorithm:</p>
+                <img src='../images/prims.jpg'>
+
+                <p>
+                    
+                    <p>4. Business Case 4:Unorganized distribution of harvested products	
+                        <p>Description: When the crops are produced and further sent to the city for sale, some parts of the city receive more crops, and others less, failing to meet demand.
+                            <p>Probable Tools: Heap, Dijkstra's Algorithm</p>
+                        </p>
+                    <p>Heap:</p>
+                    <img src='../images/heap.jpg'>
+                    <p>Dijkstra's Algorithm:</p>
+                    <img src='../images/dijkstra.jpg'>
+
+                <p>
+                    
+                    <p>5. Business Case 5:Excessive use of pesticides and insecticides	
+                        <p>Description: Unwanted amounts of pesticides and insecticides are being used on crops, altering food quality and increasing health risks.
+                            <p>Probable Tools: Sparse Tables</p>
+                        </p>
+                    <p>~Sparse table</p>
+                    <p>
+                    <p>
+                    
+                        <p>6. Business Case 6:Transportation in agricultural area	
+                            <p>Description: No proper system for transportation in fields and inadequate interconnection between fields.
+                                <p>Probable Tools: Kruskal's, Prim's Algorithm</p>
+                            </p>
+                        <p>Kruskal's Algorithm:</p>
+                        <img src='../images/kruskal.jpg'>
+                        <p>Prim's Algorithm:</p>
+                        <img src='../images/prims.jpg'>
+            </div>
+            <div class="slide">
+                <h3>SDG (Sustainable Development Goals) Alignment</h3>
+                <p>Each of the six cases aligns with SDGs such as Responsible Consumption, Clean Water and Sanitation, Decent Work and Economic Growth, and Climate Action by optimizing agricultural processes and reducing waste.
+                    <p>
+                        SDG 11: Sustainable Cities and Communities
+                        <p> 
+11.1.1: Proportion of urban population living in slums, informal settlements, or inadequate housing.
+<p>
+11.2.1: Proportion of population that has convenient access to public transport.
+<p>
+11.3.1: Ratio of land consumption rate to population growth rate.
+<p>
+11.3.2: Proportion of cities with a direct participation structure of civil society in urban planning.
+<p>
+11.4.1: Total expenditure per capita spent on the preservation, protection, and conservation of cultural and natural heritage.
+<p>
+11.5.1: Number of deaths, missing persons, and directly affected persons attributed to
+
+                    </p>
+                </p>
+            </div>
+            <div class="slide">
+                <h3>Project Functionalities</h3>
+                <p>The functionalities of the project include water management systems, transportation optimization, efficient crop distribution, and minimizing pesticide usage, all based on the identified problem statements. Each functionality is designed to improve sustainability in agricultural practices.</p>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <h1>Thank you!</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.js" integrity="sha512-x5JY7KTULoGmcgxguKf5p4i3wfx7qXlY3OMjqez4Pj8BPoMn4krRQmwDtOwF81F+/9Be+jvhBsKOIaPPZmRelQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

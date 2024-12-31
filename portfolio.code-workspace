@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../FP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fp_examples"
+	}
+}
